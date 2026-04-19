@@ -43,10 +43,13 @@ FPIs are reactive participants. They demonstrated a 1-to-3 day lag in response t
 ### Plotting time series of each variable visualising their co-movements and the impact of war.
 FPI flows over time
 <p align="center">
-  <img src="FPI flows and war shock.png" width="80%">
+  <img src="FPI Flows and War Shock.png" width="80%">
 </p
 
 In the post war period, there is a clear declining trend. The volatility also reduced post war indicating a constant selling pressure.
+<p align="center">
+  <img src="FPI Box plot.png" width="80%">
+</p
 
 •	Rolling averages and volatility.
 
