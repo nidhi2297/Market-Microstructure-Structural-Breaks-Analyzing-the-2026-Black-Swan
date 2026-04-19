@@ -25,7 +25,9 @@ FPIs are reactive participants. They demonstrated a 1-to-3 day lag in response t
 
 •	Cleaning: Handling missing values, aligning dates, merging datasets.
 
-•	Transformation: Created returns for NIFTY, Brent Oil and USD/INR rate. No transformation for FPI flows.
+•	Transformation: Created returns for NIFTY, Brent Oil and USD/INR rate. No transformation for FPI flows. 
+
+•	Scaling: Standardization of data for visualisation.
 
 
 ## Methodology & Technical Stack
@@ -41,21 +43,49 @@ FPIs are reactive participants. They demonstrated a 1-to-3 day lag in response t
 ## Exploratory Analysis
 
 ### Plotting time series of each variable visualising their co-movements and the impact of war.
-FPI flows over time
+#### FPI flows over time
 <p align="center">
-  <img src="FPI Flows and War Shock.png" width="80%">
-</p
+  <img src="FPI Flows and War Shock.png" width="48%" />
+  <img src="FPI Box plot.png" width="48%" />
+</p>
 
 In the post war period, there is a clear declining trend. The volatility also reduced post war indicating a constant selling pressure.
+
+#### FPI vs Oil Movement
+c
+
+A clear spike Brent Oil and fall in the FPIs post war. Oil became more volatile in post-war energy shock. 
+#### FPI vs USD/INR Movement
 <p align="center">
-  <img src="FPI Box plot.png" width="80%">
-</p
+  <img src="FPI vs INR.png" width="84%" />
+</p>
 
-•	Rolling averages and volatility.
+It is evident from the plot that the USD_INR appreciated visibly post war (seen by the purple line in the line chart), while the FPI follows the downward trend post war. INR_z ↑ (currency weakening) and FPI_z ↓ (outflows increasing). This shows capital flight in the wake of rising geopolitical tensions.
 
-•	Correlation matrices (normal vs. war period).
+#### FPI vs NIFTY Movement
+<p align="center">
+  <img src="FPI vs NIFTY.png" width="48%" />
+  <img src="FPI vs NIFTY zoom.png" width="48%" />
+</p>
 
-•	Highlight descriptive statistics (mean, variance, skewness).
+It is widely believed that FPIs determine Market returns. Our focus will be specifically on what this causality is and how it changes in the face of a Black Swan Event like US-Iran war that started on 28th February, 2026. We can clearly see that the volatility has increased considerably in NIFTY in the post war period. 
+
+#### Master plot: Macro dynamics during the Black Swan event
+<p align="center">
+  <img src="Macro Dynamics.png" width="84%" />
+</p>
+
+• Volatility Clustering: The density of the spikes increases significantly after the red dashed line (Feb 2026).
+
+•	Oil (Blue) and NIFTY → volatility spikes 
+
+•	USD/INR (Purple) → depreciation pressure 
+
+•	FPI (red) → sustained outflows 
+
+## Regression Analysis
+### MODEL 1 : MARKET RETURNS AS A FUNCTION OF FPI FLOWS, BRENT OIL AND USD/INR EXCHANGE RATES
+
 
 ## Key insights & Visualizations
 ### The "Correlation Flip" (Regime Shift) 
