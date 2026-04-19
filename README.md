@@ -3,13 +3,50 @@ An Econometric Study of FPI Reactivity and DII Absorption during the US-Iran Con
 ## Executive Summary
 This project investigates the impact of the February 2026 US-Iran conflict on the Indian Equity Market (NIFTY 50). Using advanced econometrics, I challenge the common narrative that Foreign Portfolio Investors (FPIs) lead market movements.
 
+•	The Conflict: The US-Iran war triggered a massive structural break in the Indian market.
+
+•	The Myth: Contrary to popular belief, FPIs did not lead the crash.
+
+•	The Reality: FPIs were reactive, selling with a 1-to-3 day lag after the NIFTY already dropped.
+
+•	The Stabilizer: DIIs (Domestic Institutional Investors) absorbed the selling pressure, preventing a total collapse.
+
+•	The Risk: Volatility (GARCH 1,1) doubled post-war, indicating a long-term "Uncertainty Premium" in the market.
+
+
 ## Key Finding
 FPIs are reactive participants. They demonstrated a 1-to-3 day lag in response to market shocks, while Domestic Institutional Investors (DIIs) acted as a critical liquidity cushion through "Absorption."
 
+## Data Collection & Cleaning
+
+•	Sources: NSE, GR0WW
+
+•	Frequency: Daily data for one year.
+
+•	Cleaning: Handling missing values, aligning dates, merging datasets.
+
+•	Transformation: Created returns for NIFTY, Brent Oil and USD/INR rate. No transformation for FPI flows.
+
+
 ## Methodology & Technical Stack
-### Language: R (tidyverse, lmtest, lmreg, zoo, rugarch, ggplot2)
-### Statistical Tests: Augmented Dickey-Fuller (Stationarity), Granger Causality (Directionality), GARCH 1,1 (Volatility Persistence).
-### Event Study: Cumulative Abnormal Returns (CAR) using Log-Returns to quantify idiosyncratic wealth destruction.
+
+•	Dataset: Compiled data on NIFTY_50, Net FPI flows to India, Brent Oil Futures, and USD/INR exchange rate for the FY 2025-26.
+
+•	Language: R (tidyverse, lmtest, lmreg, zoo, rugarch, ggplot2)
+
+•	Statistical Tests: Augmented Dickey-Fuller (Stationarity), Granger Causality (Directionality), GARCH 1,1 (Volatility Persistence).
+
+•	Event Study: Cumulative Abnormal Returns (CAR) using Log-Returns to quantify idiosyncratic wealth destruction.
+
+## Exploratory Analysis
+
+### Plotting time series of each variable visualising their co-movements and the impact of war.
+
+•	Rolling averages and volatility.
+
+•	Correlation matrices (normal vs. war period).
+
+•	Highlight descriptive statistics (mean, variance, skewness).
 
 ## Key insights & Visualizations
 ### The "Correlation Flip" (Regime Shift) 
