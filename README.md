@@ -188,7 +188,7 @@ The GARCH model proves that risk doubled from 0.008 to 0.016. This sustained ele
 * **Exogenous Factors:** The models focus on the US-Iran conflict; however, concurrent global inflation trends and domestic policy shifts may contribute to the 'Geopolitical Risk Premium' captured by the intercept.
 
 ## 👤 About the Author
-**[Nidhi Sharma]** * Aspiring Quantitative Analyst | CFA Level 1 Candidate | ISI Alumnus*
+**[Nidhi Sharma]** * Aspiring Quantitative Analyst | ISI Alumnus*
 ## 📧 Contact & Connect
 * **LinkedIn:** [Nidhi Sharma](www.linkedin.com/in/nidhi-sharma-290717129)
 * **Portfolio:** [(https://github.com/nidhi2297/ILFS-Risk-Analysis)]
