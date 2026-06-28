@@ -145,7 +145,7 @@ The Absorption effect is evident from the above DII data for the month of March,
 The following table summarizes the results of the **Lagged Regression Models** ($\text{Lag-1}$), which isolate the chronological impact of variables.
 
 | Predictor (Lag-1) | Dependent: **NIFTY_Return** | Dependent: **FPI_Net** |
-| :--- | Coefficient (p-val) | Coefficient (p-val)|
+| :--- | :--- | :--- |
 | **NIFTY_Return** | — | **201,300 (***)** |
 | **FPI_Net** | 0.0000001 (0.356) | — |
 | **INR_Return** | **-0.449 (*)** | -179,800 (.) |
