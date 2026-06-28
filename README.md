@@ -105,12 +105,12 @@ While market returns respond significantly to currency movements, **FPI flows th
 
 ## Diving deep into FPI and NIFTY relationship.
 ### The Lead-lag Paradox : Granger causality. 
-Hypothesis : Does FPI Lead NIFTY?
+Alternative Hypothesis : FPI Leads NIFTY
 
 Lag 2 Days (p=0.131). Insignificant. FPIs do not predict the market.
 
 
-Hypothesis : Does NIFTY Lead FPI?
+Alternative Hypothesis : NIFTY Leads FPI
 
 Lag 1 Day (p<0.001). Highly Significant. FPIs follow market signals.
 
