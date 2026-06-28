@@ -183,7 +183,6 @@ We use GARCH when the variance is not constant. In simple terms, this means that
 The GARCH model proves that risk doubled from 0.008 to 0.016. This sustained elevation in conditional volatility triggered institutional Value-at-Risk (VaR) thresholds, forcing the reactive selling observed in the data
 
 ## 📝 Limitations & Scope
-* **Lag Structure:** While Lag-1 showed the highest significance, extreme volatility events may exhibit intra-day leads not captured by daily closing data.
 * **Exogenous Factors:** The models focus on the US-Iran conflict; however, concurrent global inflation trends and domestic policy shifts may contribute to the 'Geopolitical Risk Premium' captured by the intercept.
 
 ## 👤 About the Author
