@@ -154,7 +154,9 @@ The following table summarizes the results of the **Lagged Regression Models** (
 | **Adjusted R²** | 0.0251 | **0.1446** |
 | **F-Statistic** | 3.017 | **14.24 (***)** |
 
-> **Finding:** The high Significance and R² in the **FPI_Net** model confirm that FPI flows are **Reactive**. Foreign institutions trade based on the previous day's market performance rather than leading the discovery of new prices.
+> **Finding:** Our lagged regression analysis identifies a clear chronological sequence in market dynamics. USD/INR movements act as the primary leading indicator for equity returns, while FPI flows occupy the final stage of the cycle as reactive participants.
+The high statistical significance of NIFTY_lag in predicting FPI_Net ($p < 0.001$) suggests that institutional capital flows are governed by Trend-Following mandates. In contrast, the lack of predictive power from FPI_lag toward the NIFTY confirms that domestic price discovery is independent of foreign institutional volume in the immediate short term.
+ The high Significance and R² in the **FPI_Net** model confirm that FPI flows are **Reactive**. Foreign institutions trade based on the previous day's market performance rather than leading the discovery of new prices.
 
 ### Wealth Destruction (Event Study)
 The CAR plot demonstrates a sustained erosion of market value. By filtering out "Expected Returns" (Pre-War Mean), I isolated the over 10% idiosyncratic loss attributed specifically to the geopolitical shock.
